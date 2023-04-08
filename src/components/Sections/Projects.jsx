@@ -3,6 +3,7 @@ import styled from "styled-components";
 // Components
 import ProjectBox from "../Elements/ProjectBox";
 import FullButton from "../Buttons/FullButton";
+import Project from "./project";
 // Assets
 import ProjectImg1 from "../../assets/img/projects/1.png";
 import ProjectImg2 from "../../assets/img/projects/2.png";
@@ -10,7 +11,8 @@ import ProjectImg3 from "../../assets/img/projects/3.png";
 import ProjectImg4 from "../../assets/img/projects/4.png";
 import ProjectImg5 from "../../assets/img/projects/5.png";
 import ProjectImg6 from "../../assets/img/projects/6.png";
-import AddImage2 from "../../assets/img/add/add2.png";
+import AddImage2 from "../../assets/img/header-img.jpg";
+
 
 export default function Projects() {
   return (
@@ -25,13 +27,13 @@ export default function Projects() {
               labore et dolore magna aliquyam erat, sed diam voluptua.
             </p>
           </HeaderInfo>
-          <div className="row textCenter">
-            <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+          <div className="">
+            {/* <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
                 img={ProjectImg1}
                 title="Awesome Project"
                 text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                action={() => alert("clicked")}
+                action={() => {})}
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
@@ -39,7 +41,7 @@ export default function Projects() {
                 img={ProjectImg2}
                 title="Awesome Project"
                 text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                action={() => alert("clicked")}
+                action={() => {})}
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
@@ -47,17 +49,18 @@ export default function Projects() {
                 img={ProjectImg3}
                 title="Awesome Project"
                 text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                action={() => alert("clicked")}
+                action={() => {})}
               />
-            </div>
+            </div> */}
+              <Project/>
           </div>
-          <div className="row textCenter">
+          {/* <div className="row textCenter">
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <ProjectBox
                 img={ProjectImg4}
                 title="Awesome Project"
                 text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                action={() => alert("clicked")}
+                action={() => {})}
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
@@ -65,7 +68,7 @@ export default function Projects() {
                 img={ProjectImg5}
                 title="Awesome Project"
                 text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                action={() => alert("clicked")}
+                action={() => {})}
               />
             </div>
             <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
@@ -73,13 +76,13 @@ export default function Projects() {
                 img={ProjectImg6}
                 title="Awesome Project"
                 text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                action={() => alert("clicked")}
+                action={() => {})}
               />
             </div>
-          </div>
+          </div> */}
           <div className="row flexCenter">
             <div style={{ margin: "50px 0", width: "200px" }}>
-              <FullButton title="Load More" action={() => alert("clicked")} />
+              <FullButton title="Load More" action={() => {}} />
             </div>
           </div>
         </div>
@@ -90,7 +93,7 @@ export default function Projects() {
             <AddLeft>
               <AddLeftInner>
                 <ImgWrapper className="flexCenter">
-                  <img className="radius8" src={AddImage2} alt="add" />
+                  <img className="radius8" src={AddImage2} alt="add" width={426} height={607} />
                 </ImgWrapper>
               </AddLeftInner>
             </AddLeft>
@@ -103,10 +106,10 @@ export default function Projects() {
               </p>
               <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0" }}>
                 <div style={{ width: "190px" }}>
-                  <FullButton title="Get Started" action={() => alert("clicked")} />
+                  <FullButton title="Get Started" action={() => {}} />
                 </div>
                 <div style={{ width: "190px", marginLeft: "15px" }}>
-                  <FullButton title="Contact Us" action={() => alert("clicked")} border />
+                  <FullButton title="Contact Us" action={() => {}} border />
                 </div>
               </ButtonsRow>
             </AddRight>

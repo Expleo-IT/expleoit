@@ -1,14 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import ScrollAnimation from "react-animate-on-scroll";
 // Components
 import ClientSlider from "../Elements/ClientSlider";
 import ServiceBox from "../Elements/ServiceBox";
 import FullButton from "../Buttons/FullButton";
 // Assets
-import AddImage1 from "../../assets/img/add/1.png";
-import AddImage2 from "../../assets/img/add/2.png";
-import AddImage3 from "../../assets/img/add/3.png";
-import AddImage4 from "../../assets/img/add/4.png";
+import AddImage1 from "../../assets/img/add/header-img.jpg";
+import AddImage2 from "../../assets/img/add/header-img.jpg";
+import AddImage3 from "../../assets/img/add/header-img.jpg";
+import AddImage4 from "../../assets/img/add/header-img.jpg";
 
 export default function Services() {
   return (
@@ -30,28 +31,38 @@ export default function Services() {
           </HeaderInfo>
           <ServiceBoxRow className="flex">
             <ServiceBoxWrapper>
-              <ServiceBox
-                icon="roller"
-                title="Graphic Design"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
-              />
+              <ScrollAnimation animateIn="fadeInLeft">
+                <ServiceBox
+                  icon="roller"
+                  title="App Development"
+                  subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                />
+              </ScrollAnimation>
+
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
+              <ScrollAnimation animateIn="fadeInBottom" delay={0.2 * 1000}>
               <ServiceBox
                 icon="monitor"
                 title="Web Design"
                 subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore."
               />
+              </ScrollAnimation>
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
+            <ScrollAnimation animateIn="fadeInTop" delay={0.2 * 1000}>
               <ServiceBox
                 icon="browser"
                 title="Development"
                 subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat."
               />
+              </ScrollAnimation>
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
-              <ServiceBox icon="printer" title="Print" subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor." />
+            <ScrollAnimation animateIn="fadeInRight">
+
+              <ServiceBox icon="printer" title="Data Science" subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor." />
+            </ScrollAnimation>
             </ServiceBoxWrapper>
           </ServiceBoxRow>
         </div>
@@ -65,7 +76,7 @@ export default function Services() {
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
                   diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
                 </p>
-                <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0"}}>
+                <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0" }}>
                   <div style={{ width: "190px" }}>
                     <FullButton title="Get Started" action={() => alert("clicked")} />
                   </div>
@@ -78,18 +89,18 @@ export default function Services() {
                 <AddRightInner>
                   <div className="flexNullCenter">
                     <AddImgWrapp1 className="flexCenter">
-                      <img src={AddImage1} alt="office" />
+                      <img src={AddImage1} alt="office" width={285} height={406}/>
                     </AddImgWrapp1>
                     <AddImgWrapp2>
-                      <img src={AddImage2} alt="office" />
+                      <img src={AddImage2} alt="office" width={197} height={333}/>
                     </AddImgWrapp2>
                   </div>
                   <div className="flexNullCenter">
                     <AddImgWrapp3>
-                      <img src={AddImage3} alt="office" />
+                      <img src={AddImage3} alt="office" width={112} height={125}/>
                     </AddImgWrapp3>
                     <AddImgWrapp4>
-                      <img src={AddImage4} alt="office" />
+                      <img src={AddImage4} alt="office" width={197} height={224}/>
                     </AddImgWrapp4>
                   </div>
                 </AddRightInner>

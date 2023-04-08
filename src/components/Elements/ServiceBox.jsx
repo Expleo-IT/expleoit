@@ -1,17 +1,23 @@
 import React from "react";
 import styled from "styled-components";
+
+import { FaMobile } from 'react-icons/fa';
 // Assets
 import RollerIcon from "../../assets/svg/Services/RollerIcon";
 import MonitorIcon from "../../assets/svg/Services/MonitorIcon";
 import BrowserIcon from "../../assets/svg/Services/BrowserIcon";
 import PrinterIcon from "../../assets/svg/Services/PrinterIcon";
+import DataScience from "../../assets/img/datascience.png";
+
 
 export default function ServiceBox({icon, title, subtitle}) {
   let getIcon;
 
   switch (icon) {
     case "roller":
-      getIcon = <RollerIcon />;
+      getIcon = <FaMobile style={{
+        width:43.336, height:32.531
+      }}/>;
       break;
     case "monitor":
       getIcon = <MonitorIcon />;
@@ -20,7 +26,9 @@ export default function ServiceBox({icon, title, subtitle}) {
       getIcon = <BrowserIcon />;
       break;
     case "printer":
-      getIcon = <PrinterIcon />;
+      getIcon = <img src={DataScience}style={{
+        width:43.336, height:32.531
+      }} />;
       break;
     default:
       getIcon = <RollerIcon />;
